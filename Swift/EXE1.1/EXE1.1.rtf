@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red225\green226\blue231;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;\csgenericrgb\c88217\c88535\c90427;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20840\viewh11380\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+
+\f1 \cf2 \CocoaLigature0 class Pessoa \{\
+    \
+    var nome: String = ""\
+    var sexo: String = ""\
+    var idade: Int = 0\
+    var vegetariana: Bool = true\
+    \
+    init(nome: String, sexo: String, idade: Int, vegetariana: Bool) \{\
+        self.nome = nome\
+        self.sexo = sexo\
+        self.idade = idade\
+        self.vegetariana = vegetariana\
+    \}\
+        \
+\}\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+class Churrasco \{\
+    \
+    var qtdCarne: Int = 0\
+    \
+    init(qtdCarne: Int) \{\
+        self.qtdCarne = qtdCarne\
+    \}\
+    \
+    \
+    func verificarConsumo(pessoa: Pessoa) \{\
+        \
+        if(pessoa.idade <= 3 || pessoa.vegetariana == true)\{\
+           self.qtdCarne = 0\
+            print(" \\(pessoa.nome) n\'e3o consome carne")\
+        \}else if(pessoa.idade > 3 && pessoa.idade <= 12)\{\
+            self.qtdCarne = 1\
+            print(" \\(pessoa.nome) ira consumir \\(qtdCarne) kg de carne")\
+        \}else\{\
+            self.qtdCarne = 2\
+            print(" \\(pessoa.nome) ira consumir \\(qtdCarne) kg de carne")\
+        \}\
+            \
+    \}\
+    \
+\}\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+import Foundation\
+\
+print("Hello, World! \\n\\n")\
+\
+\
+\
+//Inicializa\'e7\'e3p dos objetos\
+var pessoas1 =  Pessoa (nome: "Pedro", sexo: "M", idade: 20, vegetariana: false)\
+var pessoas2 =  Pessoa (nome: "Joao", sexo: "M", idade: 8, vegetariana: false)\
+var pessoas3 =  Pessoa (nome: "Maria", sexo: "F", idade: 25, vegetariana: true)\
+var pessoas4 =  Pessoa (nome: "Ana", sexo: "F", idade: 18, vegetariana: false)\
+var consulta =  Churrasco (qtdCarne: 0)\
+\
+consulta.verificarConsumo(pessoa: pessoas1)\
+consulta.verificarConsumo(pessoa: pessoas2)\
+consulta.verificarConsumo(pessoa: pessoas3)\
+consulta.verificarConsumo(pessoa: pessoas4)\
+\
+print("\\n\\n")\cf3 \
+}
