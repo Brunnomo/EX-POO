@@ -16,38 +16,27 @@ public class Bateria {
         return carga;
     }
 
-    public void setCarga(int carga) {
-        this.carga = carga;
-    }
-
     public int getCargaMax() {
         return cargaMax;
-    }
-
-    public void setCargaMax(int cargaMax) {
-        this.cargaMax = cargaMax;
     }
 
     public int getCargaMin() {
         return cargaMin;
     }
 
-    public void setCargaMin(int cargaMin) {
-        this.cargaMin = cargaMin;
-    }
     
     public void carregar(){
         if(this.carga >= this.cargaMin && this.carga<=this.cargaMax){
-	this.setCarga(this.carga+5);
+	this.carga = this.carga+5;
 	}
     }
 	
     public void descarregar(){
 	if(this.carga>=this.cargaMin && this.carga<=this.cargaMax){
-	this.setCarga(this.carga-10);
+	this.carga = this.carga-10;
 	}
         if(this.carga<0){
-            this.setCarga(0);
+            this.carga=0;
         }
     }
     

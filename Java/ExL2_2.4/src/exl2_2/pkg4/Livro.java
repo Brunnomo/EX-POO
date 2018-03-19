@@ -19,17 +19,8 @@ public class Livro {
         return formato;
     }
 
-    public void setFormato(String formato) {
-        this.formato = formato;
-    }
-
     public Double getPreço() {
         return preço;
     }
-
-    public void setPreço(Double preço) {
-        this.preço = preço;
-    }
-    
     
 }    

@@ -17,21 +17,21 @@ public class Loja {
     public void venderEpub(){
         if(this.qtdEpub>0){
             System.out.println("Livro Vendido");
-            this.setQtdEpub(qtdEpub-1);
+            this.qtdEpub = qtdEpub-1;
         }
     }
     
     public void venderPdf(){
         if(this.qtdPdf>0){
             System.out.println("Livro Vendido");
-            this.setQtdPdf(qtdPdf-1);
+            this.qtdPdf = qtdPdf-1;
         }
     }
     
     public void venderFisico(){
         if(this.qtdFisico>0){
             System.out.println("Livro Vendido");
-            this.setQtdFisico(qtdFisico-1);
+            this.qtdFisico = qtdFisico-1;
         }
     }
     
@@ -57,50 +57,24 @@ public class Loja {
         return epub;
     }
 
-    public void setEpub(Livro epub) {
-        this.epub = epub;
-    }
-
     public Livro getPdf() {
         return pdf;
-    }
-
-    public void setPdf(Livro pdf) {
-        this.pdf = pdf;
     }
 
     public Livro getFisico() {
         return fisico;
     }
 
-    public void setFisico(Livro fisico) {
-        this.fisico = fisico;
-    }
-
     public int getQtdEpub() {
         return qtdEpub;
-    }
-
-    public void setQtdEpub(int qtdEpub) {
-        this.qtdEpub = qtdEpub;
     }
 
     public int getQtdPdf() {
         return qtdPdf;
     }
 
-    public void setQtdPdf(int qtdPdf) {
-        this.qtdPdf = qtdPdf;
-    }
-
     public int getQtdFisico() {
         return qtdFisico;
     }
-
-    public void setQtdFisico(int qtdFisico) {
-        this.qtdFisico = qtdFisico;
-    }
-    
-    
 
 }
