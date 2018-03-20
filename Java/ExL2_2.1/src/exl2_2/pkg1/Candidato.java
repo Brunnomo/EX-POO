@@ -18,7 +18,7 @@ public class Candidato {
     public String getNome() {
         return nome;
     }
-
+    
     public PartidoPolitico getPartidoPolitico() {
         return partidoPolitico;
     }
