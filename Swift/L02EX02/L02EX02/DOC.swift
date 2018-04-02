@@ -10,7 +10,7 @@ public class Doc{
         if doc < cliente1.getSaldo() + cliente1.getLimite(){
             print("\(cliente1.getNome()), o Doc foi relaizado com sucesso, portanto:")
             cliente1.sacar(saque: doc)
-            cliente2.Deposito(deposito: doc)
+            cliente2.deposito(deposito: doc)
             
         }else{
             print("\(cliente1.getNome()), não foi possível realizar a transferencia...")
