@@ -10,7 +10,7 @@ var cliente2 = Cliente(nome: "Maria", saldo: 1000, limite: 300)
 
 cliente1.sacar(saque: 550)
 cliente1.checarSaldo()
-cliente1.Deposito(deposito: 400)
+cliente1.deposito(deposito: 400)
 cliente1.checarSaldo()
 
 var doc1 = Doc()
