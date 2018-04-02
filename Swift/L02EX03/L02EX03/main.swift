@@ -32,7 +32,7 @@ print("\n")
 
 cel2.getStatusCel()
 cel2.ligarCel()
-cel2.insereBat()
+cel2.insereBat() // chama a função de inserir uma bateria no celular
 cel2.getStatusCel()
 cel2.ligarCel()
 cel2.getStatusCel()
@@ -60,7 +60,7 @@ cel2.getStatusCel()
 bat3.descarregaBateria()
 cel2.getStatusCel()
 print("")
-cel2.trocaBat(celular: cel2, baterianova: bat2)
+cel2.trocaBat(baterianova: bat2) // revisado a função, sem necessidade de enviar o parâmetro celular
 cel2.getStatusCel()
 cel2.ligarCel()
 cel2.getStatusCel()
