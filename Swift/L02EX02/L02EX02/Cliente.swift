@@ -29,7 +29,7 @@ public class Cliente{
     }//fim da funcão saque
     
     
-    public func Deposito(deposito: Double){
+    public func deposito(deposito: Double){
          saldo += max(0,deposito)
             
          if deposito > 0{
