@@ -71,8 +71,8 @@ public class Celular{
     }// fim da função que mostar o status e bateria do celular, ligado ou desligado
     
     
-    public func trocaBat(celular: Celular, baterianova: Bateria){
-        celular.desligaCel()
+    public func trocaBat(baterianova: Bateria){
+        desligaCel()
         self.bateriaCel = baterianova
     } //fim da função de substituir a bateria no celular
     
@@ -82,13 +82,5 @@ public class Celular{
            temBat = true
         }
     }// fim da função inser bateria
-    
-    
-    public func retiraBat(){
-        if temBat == true{
-            temBat = false
-        }
-    }// fim da função retirar a bateria
-    
-    
+   
 }
