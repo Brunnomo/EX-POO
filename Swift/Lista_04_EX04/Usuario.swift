@@ -2,9 +2,9 @@ import Foundation
  
  public class Usuario{
  
-    public var login: Login
+    public var login: String
      
-    init(login: Login) {
+    init(login: String) {
         self.login = login
     }
   
