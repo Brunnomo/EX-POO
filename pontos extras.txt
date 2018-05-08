@@ -1,7 +1,0 @@
-call (chama outro programa)
-deposito
-saque
-display diferente "piscando", "cor"
-saldo
-validar cpf
-pesquisar uper para caracteres.
